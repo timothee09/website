@@ -12,11 +12,12 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #007BFF, #0056b3);
+    background-color: #A3C1DA; /* Couleur bleu plus clair */
     color: #fff;
     position: fixed;
     width: 100%;
     z-index: 1000;
+    margin-bottom: 20px; /* Espace sous le header */
 }
 
 header h1 {
@@ -45,15 +46,21 @@ nav ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
-.hero-content {
-    background: #007BFF;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
+#hero {
+    background-color: #A3C1DA; /* Couleur bleu plus clair */
+    margin-top: 20px; /* Espace au-dessus de la section hero */
+    text-align: center; /* Centrer le texte */
+    padding: 40px 20px; /* Ajouter du padding pour l'espacement */
 }
 
 .hero-content h2 {
-    margin: 0;
+    font-size: 2.5em; /* Ajuster la taille de la police */
+    font-weight: bold; /* Mettre le texte en gras */
+}
+
+.hero-content p {
+    font-size: 1.2em; /* Ajuster la taille de la police */
+    margin: 10px 0; /* Ajouter de l'espace autour du texte */
 }
 
 section {
