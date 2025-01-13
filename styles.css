@@ -1,89 +1,85 @@
-/* Styles globaux */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BP ALM Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BP ALM Consulting</h1>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#missions">Missions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Bienvenue chez BP ALM Consulting</h2>
+            <p>Experts en gestion des risques financiers et en ALM.</p>
+            <a href="#contact" class="btn-primary">Contactez-nous</a>
+        </div>
+    </section>
 
-/* En-tête */
-header {
-    background: #004080;
-    color: #fff;
-    padding: 15px 0;
-}
+    <main>
+        <section id="presentation">
+            <div class="container">
+                <h2>Qui sommes-nous ?</h2>
+                <p>BP ALM Consulting est un cabinet spécialisé dans l'optimisation de la gestion des actifs et des passifs, offrant des solutions innovantes et adaptées à vos besoins.</p>
+            </div>
+        </section>
 
-header h1 {
-    text-align: center;
-    font-size: 28px;
-    margin: 0;
-}
+        <section id="expertise">
+            <div class="container">
+                <h2>Notre Expertise</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <h3>Gestion des risques</h3>
+                        <p>Analyse approfondie pour sécuriser vos opérations financières.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Stratégies ALM</h3>
+                        <p>Optimisation de vos actifs et passifs pour une meilleure performance.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Conformité réglementaire</h3>
+                        <p>Accompagnement pour répondre aux exigences réglementaires (Bâle III, Solvabilité II).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-header nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 10px 0 0;
-    padding: 0;
-}
+        <section id="missions">
+            <div class="container">
+                <h2>Nos Missions</h2>
+                <ul>
+                    <li>Audit des systèmes financiers</li>
+                    <li>Conseil en conformité réglementaire</li>
+                    <li>Formation et accompagnement des équipes</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Sections */
-section {
-    margin: 40px 0;
-    padding: 30px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    text-align: center;
-    color: #004080;
-    margin-bottom: 20px;
-}
-
-section p, section ul {
-    font-size: 16px;
-    color: #555;
-}
-
-/* Pied de page */
-footer {
-    background: #004080;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer h2 {
-    font-size: 18px;
-}
-
-footer p {
-    font-size: 14px;
-    margin: 10px 0;
-}
+    <footer>
+        <div class="container">
+            <section id="contact">
+                <h2>Contactez-nous</h2>
+                <p>Email : bpalmconsulting@gmail.com</p>
+                <p>Téléphone : 01 23 45 67 89</p>
+                <p>Adresse : 123 Rue de la Finance, Paris</p>
+            </section>
+            <p>&copy; 2025 BP ALM Consulting. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
