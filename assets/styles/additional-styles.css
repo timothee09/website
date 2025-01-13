@@ -5,18 +5,18 @@ body {
 }
 
 h2 {
-    color: #007BFF;
+    color: #007BFF; /* Couleur pour les titres */
     margin-bottom: 10px;
 }
 
 ul {
-    list-style-type: square;
-    padding-left: 20px;
+    list-style-type: square; /* Type de liste */
+    padding-left: 20px; /* Espacement à gauche */
 }
 
 footer {
-    margin-top: 20px;
-    padding: 20px 0;
-    background: #333;
-    color: #fff;
+    margin-top: 20px; /* Espace au-dessus du footer */
+    padding: 20px 0; /* Padding pour le footer */
+    background: #333; /* Couleur de fond du footer */
+    color: #fff; /* Couleur du texte du footer */
 }
