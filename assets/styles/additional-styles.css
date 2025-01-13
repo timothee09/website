@@ -14,18 +14,6 @@ ul {
     padding-left: 20px;
 }
 
-.btn-primary {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
 footer {
     margin-top: 20px;
     padding: 20px 0;
