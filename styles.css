@@ -46,6 +46,10 @@ body {
     transition: color 0.3s ease; /* Ajoute une transition douce pour la couleur */
 }
 
+.main-header nav a:hover {
+    color: #0066cc; /* Change la couleur en bleu */
+}
+
 /* Section Hero */
 .hero {
     background-image: url('assets/hero-bg.jpg');
