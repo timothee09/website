@@ -4,25 +4,13 @@
     --orange: #ff6600;
     --vert: #339966;
 }
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: var(--bleu-fonce);
-    background-color: var(--gris-clair);
-}
-header {
-    background-color: var(--bleu-fonce);
-    color: white;
-}
-.nav ul {
-    flex-display;
-    justify-content:center;
-}
 
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f4f8;
+    color: var(--bleu-fonce);
 }
 
 .container {
@@ -32,26 +20,30 @@ body {
 }
 
 header {
-    background-color: #A3C1DA; /* Couleur bleu plus clair */
+    background-color: var(--bleu-fonce);
     color: #fff;
     position: fixed;
     width: 100%;
     z-index: 1000;
-    margin-bottom: 20px; /* Espace sous le header */
+    margin-bottom: 20px;
+    padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
-    text-align: center;
+    margin: 0;
+    font-family: 'Lora', serif;
 }
 
 nav ul {
     padding: 0;
     list-style: none;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -64,38 +56,53 @@ nav ul li a {
 
 nav ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
 #hero {
-    background-color: #A3C1DA; /* Couleur bleu plus clair */
-    margin-top: 20px; /* Espace au-dessus de la section hero */
-    text-align: center; /* Centrer le texte */
-    padding: 40px 20px; /* Ajouter du padding pour l'espacement */
+    background-color: var(--bleu-fonce);
+    margin-top: 20px;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
 }
 
 .hero-content h2 {
-    font-size: 2.5em; /* Ajuster la taille de la police */
-    font-weight: bold; /* Mettre le texte en gras */
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
 .hero-content p {
-    font-size: 1.2em; /* Ajuster la taille de la police */
-    margin: 10px 0; /* Ajouter de l'espace autour du texte */
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
 section {
     padding: 60px 0;
 }
 
+section:nth-child(even) {
+    background-color: #fff;
+}
+
+section:nth-child(odd) {
+    background-color: var(--gris-clair);
+}
+
 footer {
-    background: #333;
+    background: var(--bleu-fonce);
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
 }
 
 .btn-primary {
-    background-color: #007BFF;
+    background-color: var(--orange);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -104,5 +111,15 @@ footer {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: var(--vert);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
