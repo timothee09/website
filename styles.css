@@ -1,3 +1,23 @@
+:root {
+    --bleu-fonce: #303890;
+    --gris-clair: #f2f2f2;
+    --orange: #ff6600;
+    --vert: #339966;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--bleu-fonce);
+    background-color: var(--gris-clair);
+}
+header {
+    background-color: var(--bleu-fonce);
+    color: white;
+}
+.nav ul {
+    flex-display;
+    justify-content:center;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
