@@ -26,7 +26,7 @@ body {
 }
 
 .main-header .logo {
-    max-width: 150px;
+    max-width: 120px; /* Réduire la taille du logo sur mobile */
     margin-left: 20px;
     flex-shrink: 0;
 }
@@ -125,6 +125,7 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
 }
 
 .service-card:hover {
@@ -207,27 +208,14 @@ body {
     .main-header .container {
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
     .main-header nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-    }
-
-    .services .service-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-card {
-        width: 100%;
-        max-width: 350px;
-        margin-bottom: 20px;
-    }
-
-    .testimonials .testimonial {
-        width: 80%;
+        gap: 15px;
+        margin-top: 20px;
     }
 
     .hero h1 {
@@ -236,6 +224,26 @@ body {
 
     .hero p {
         font-size: 16px;
+    }
+
+    .services .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+        max-width: 350px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .testimonials .testimonial {
+        width: 80%;
+    }
+
+    .testimonials h2 {
+        font-size: 24px;
     }
 
     .main-footer p {
