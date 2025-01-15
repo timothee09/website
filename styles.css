@@ -42,6 +42,8 @@ body {
 .main-header nav a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Ajoute une transition douce pour la couleur */
 }
 
 /* Section Hero */
