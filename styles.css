@@ -296,12 +296,20 @@ body {
     font-size: 16px;
 }
 
-/* Media Queries pour la réactivité */
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
+    /* Fixer le header en haut de l'écran */
+    .main-header {
+        position: fixed; /* Fixe le header en haut */
+        top: 0;
+        left: 0;
+        width: 100%; /* Occupe toute la largeur */
+        z-index: 1000; /* Assure que le header soit au-dessus des autres éléments */
+    }
 
+    /* Ajuster la hauteur du menu latéral */
     #sidebar {
-        height: 1000px; /* Hauteur du menu égale à la hauteur de la fenêtre moins la hauteur du header */
-        top: 60px; /* Commence sous le header */
+        height: 100vh; /* Hauteur égale à la hauteur de l'écran */
+        top: 80px; /* Commence juste en dessous du header (80px pour tenir compte du header fixe) */
         left: -200px; /* Menu caché initialement */
     }
 
@@ -312,46 +320,36 @@ body {
 
     /* Réduire la taille du bouton */
     .sidebar-toggle {
-        font-size: 24px; /* Réduire la taille du texte du bouton */
-        padding: 8px 12px; /* Réduire le rembourrage pour un bouton plus petit */
-        cursor: pointer; /* Indiquer que c'est un bouton cliquable */
-        position: absolute; /* Positionner le bouton absolument dans le header */
-        top: 0; /* Placer le bouton tout en haut */
-        left: 0; /* Placer le bouton tout à gauche */
-        z-index: 1001; /* Assurer que le bouton soit au premier plan */
-        background-color: transparent; /* Retirer le fond */
-        color: #fff; /* Couleur du texte pour un bon contraste */
-        border: none; /* Retirer toute bordure pour un look plus épuré */
-        border-radius: 5px; /* Coins légèrement arrondis */
-        width: auto; /* Laisser la largeur s'ajuster à son contenu */
-        height: auto; /* Laisser la hauteur s'ajuster à son contenu */
+        font-size: 24px;
+        padding: 8px 12px;
+        cursor: pointer;
+        position: fixed; /* Fixe le bouton en position fixe */
+        top: 0; /* Place le bouton tout en haut */
+        left: 0; /* Place le bouton tout à gauche */
+        z-index: 1001; /* S'assurer qu'il soit au-dessus des autres éléments */
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    /* Ajustement du header pour que le bouton s'intègre bien */
-
     .main-header .container {
-        display: block; /* Modifie l'affichage pour que les éléments soient empilés verticalement */
-        text-align: left; /* Aligne à gauche le contenu de l'en-tête */
-    }
-
-    .main-header {
-        padding: 10px 20px; /* Réduire le padding du header et ajouter de l'espace pour le bouton */
-        position: relative; /* Assurer que le header soit un conteneur pour le bouton */
+        display: block;
+        text-align: left;
     }
 
     .main-header .logo {
-        max-width: 80px; /* Réduire la taille du logo pour les petits écrans */
-        margin-left: 30px;
+        max-width: 80px;
+        margin-left: 50px;
     }
 
     .main-header .header-image {
-        max-width: 200px; /* Réduire la taille du logo pour les petits écrans */
-        margin-right: 70px;
-}
-
+        max-width: 190px;
+        margin-right: 65px;
+    }
 
     /* Masquer le menu de navigation par défaut sur mobile */
     .main-header nav ul {
@@ -359,11 +357,12 @@ body {
     }
 
     .hero {
-        padding: 60px 20px; /* Réduire l'espace de la section hero */
+        padding: 60px 20px;
+        margin-top: 80px; /* Marge supplémentaire pour compenser la hauteur du header */
     }
 
     .hero h1 {
-        font-size: 28px; /* Réduire la taille du titre sur mobile */
+        font-size: 28px;
     }
 
     .service-cards {
@@ -376,5 +375,11 @@ body {
         margin-bottom: 20px;
     }
 
-
+    /* Position de l'image citation.png */
+    .hero .citation-image {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        max-width: 20%;
+    }
 }
