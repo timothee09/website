@@ -348,11 +348,8 @@ body {
     }
 
     .main-header .header-image {
-    display: block; /* Assure que l'image est sur une nouvelle ligne */
-    max-width: 800px; /* Limite la largeur de l'image */
-    margin-left: 30px; /* Décale l'image de la gauche */
-    margin-top: 10px; /* Optionnel : Ajoute un peu d'espace au-dessus de l'image */
-    width: 100%; /* Ajoute la largeur complète pour s'ajuster à l'écran */
+        max-width: 200px; /* Réduire la taille du logo pour les petits écrans */
+        margin-right: 70px;
 }
 
 
