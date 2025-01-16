@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BP ALM Consulting propose des solutions de gestion ALM, de conformité et de refinancement pour transformer votre entreprise.">
+    <title>BP ALM CONSULTING</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Menu latéral -->
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <!-- Retirer ou masquer le logo ici -->
+            <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Bouton pour ouvrir le menu latéral -->
+    <div class="sidebar-toggle" onclick="toggleSidebar()">&#9776;</div>
+    
+    <header class="main-header">
+        <div class="container">
+            <img src="assets/logo.png" alt="Logo ALM Team Consulting" class="logo">
+            <img src="assets/citation.png" alt="Image du bandeau" class="header-image">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Transformez votre entreprise avec BP ALM CONSULTING</h1>
+            <p>Experts en gestion ALM, conformité et refinancement, nous vous aidons à optimiser vos solutions financières pour un avenir plus agile et performant.</p>
+            <a href="contact.html" class="cta-button">Contactez-nous</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="assets/service1.jpg" alt="Consulting">
+                    <h3>Consulting Stratégique</h3>
+                    <p>Définition de stratégies digitales adaptées à vos besoins.</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/service2.jpg" alt="Formation">
+                    <h3>Formation</h3>
+                    <p>Programmes de formation pour développer les compétences de vos équipes.</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/service3.jpg" alt="Support">
+                    <h3>Support Technique</h3>
+                    <p>Assistance technique pour garantir la continuité de vos opérations.</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/service3.jpg" alt="Support">
+                    <h3>Support Technique</h3>
+                    <p>Assistance technique pour garantir la continuité de vos opérations.</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="assets/service3.jpg" alt="Support">
+                    <h3>Support Technique</h3>
+                    <p>Assistance technique pour garantir la continuité de vos opérations.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="testimonial-carousel">
+        <div class="testimonial">
+            <p>"Une équipe professionnelle qui a su répondre à nos besoins spécifiques." - Client A</p>
+        </div>
+        <div class="testimonial">
+            <p>"Des solutions innovantes qui ont transformé notre entreprise." - Client B</p>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2025 BP ALM Consulting. Tous droits réservés.</p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">Contactez-nous : <a href="mailto:bpalmconsulting@gmail.com" style="text-decoration: none; color: inherit;">bpalmconsulting@gmail.com</a></p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">
+            <a href="mentions-legales.html" class="legal-link">Mentions légales</a>
+        </p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">
+            <a href="politique-de-confidentialite.html" class="legal-link">Politique de Confidentialité</a>
+        </p>
+    </footer>
+    
+    
+    <style>
+        .legal-link {
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+    
+        .legal-link:hover {
+            color: blue;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #273482;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center; /* Aligne verticalement tous les éléments */
+        }
+
+        footer p {
+            margin: 0;
+            display: inline-block;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #00b4d8;
+            transform: scale(1.05);
+        }
+
+        footer span {
+            font-size: 1.5em;
+            margin: 0 10px;
+            display: inline-flex; /* Utilisation de flex pour un alignement précis */
+            align-items: center;  /* Centrer verticalement */
+        } 
+    </style>
+    
+    
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('sidebar').style.top = "80px";
+            document.getElementById('sidebar').style.height = "calc(100% - 80px)";
+        }
+    </script>
+</body>
+</html>

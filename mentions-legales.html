@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales - BP ALM Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesmention.css">
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Menu latéral -->
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Bouton pour ouvrir le menu latéral -->
+    <div class="sidebar-toggle" onclick="toggleSidebar()">&#9776;</div>
+
+    <header class="main-header">
+        <div class="container">
+            <img src="assets/logo.png" alt="Logo ALM Team Consulting" class="logo">
+            <img src="assets/citation.png" alt="Image du bandeau" class="header-image">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu de la page -->
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>Les présentes mentions légales ont pour objectif d’informer l'utilisateur du site BP ALM Consulting des informations essentielles concernant l'utilisation du site.</p>
+        </section>
+
+        <section>
+            <h2>1. Présentation du site</h2>
+            <p>Le site BP ALM Consulting est édité par :</p>
+            <p><strong>Nom de l'entreprise :</strong> BP ALM Consulting</p>
+            <p><strong>Forme juridique :</strong> SASU, société par actions simplifiée unipersonnelle</p>
+            <p><strong>Capital social :</strong> 1 000,00 EUR</p>
+            <p><strong>Adresse :</strong> 48 Avenue Gabriel Péri, 92160 Antony  , France</p>
+            <p><strong>Numéro de SIRET :</strong> 908 652 258</p>
+            <p><strong>Numéro de TVA :</strong> FR27908652258</p>
+            <p><strong>Directeur de publication :</strong> ///</p>
+            <p><strong>Hébergeur :</strong> ///</p>
+        </section>
+
+        <section>
+            <h2>2. Conditions d'utilisation</h2>
+            <p>L'utilisation du site implique l'acceptation des conditions. L'accès est gratuit, mais les frais d'accès sont à la charge de l'utilisateur.</p>
+        </section>
+
+        <section>
+            <h2>3. Propriété intellectuelle</h2>
+            <p>Le contenu du site (textes, images, logos, vidéos) est protégé par des droits d'auteur et est la propriété de BP ALM Consulting.</p>
+        </section>
+
+        <section>
+            <h2>4. Cookies</h2>
+            <p>Le site utilise des cookies pour améliorer l'expérience de navigation. Vous pouvez les désactiver dans votre navigateur.</p>
+        </section>
+
+        <section>
+            <h2>5. Protection des données personnelles</h2>
+            <p>Conformément au RGPD, BP ALM Consulting protège vos données. Vous pouvez exercer vos droits en nous contactant à <strong>bpalmconsulting@gmail.com</strong>.</p>
+        </section>
+
+        <section>
+            <h2>6. Responsabilité</h2>
+            <p>BP ALM Consulting ne peut être tenue responsable des dommages liés à l'utilisation du site, bien que les informations soient régulièrement mises à jour.</p>
+        </section>
+
+        <section>
+            <h2>7. Modifications des mentions légales</h2>
+            <p>Les mentions légales peuvent être modifiées à tout moment. Consultez cette page régulièrement pour les mises à jour.</p>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 BP ALM Consulting. Tous droits réservés.</p>
+        <span>-</span>
+        <p>Contactez-nous : <a href="mailto:bpalmconsulting@gmail.com">bpalmconsulting@gmail.com</a></p>
+        <span>-</span>
+        <p><a href="mentions-legales.html" class="legal-link">Mentions légales</a></p>
+        <span>-</span>
+        <p><a href="politique-de-confidentialite.html" class="legal-link">Politique de Confidentialité</a></p>
+    </footer>
+
+    <style>
+        .legal-link {
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .legal-link:hover {
+            color: blue;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #273482;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center; /* Aligne verticalement tous les éléments */
+        }
+
+        footer p {
+            margin: 0;
+            display: inline-block;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #00b4d8;
+            transform: scale(1.05);
+        }
+
+        footer span {
+            font-size: 1.5em;
+            margin: 0 10px;
+            display: inline-flex; /* Utilisation de flex pour un alignement précis */
+            align-items: center;  /* Centrer verticalement */
+        } 
+    </style>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('sidebar').style.top = "80px";
+            document.getElementById('sidebar').style.height = "calc(100% - 80px)";
+        }
+    </script>
+</body>
+
+</html>
