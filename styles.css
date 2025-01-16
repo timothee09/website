@@ -297,7 +297,7 @@ body {
 }
 
 /* Media Queries pour la réactivité */
-@media (max-width: 768px) {
+@media only screen and (max-width: 767px){
 
     #sidebar {
         height: 1000px; /* Hauteur du menu égale à la hauteur de la fenêtre moins la hauteur du header */
