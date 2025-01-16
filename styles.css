@@ -298,49 +298,86 @@ body {
 
 /* Media Queries pour la réactivité */
 @media (max-width: 768px) {
-    .main-header .container {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+
+    #sidebar {
+        height: 1000px; /* Hauteur du menu égale à la hauteur de la fenêtre moins la hauteur du header */
+        top: 60px; /* Commence sous le header */
+        left: -200px; /* Menu caché initialement */
     }
 
-    .main-header nav ul {
-        flex-direction: column;
+    /* Affichage du menu latéral lorsqu'il est activé */
+    #sidebar.active {
+        left: 0; /* Afficher le menu latéral */
+    }
+
+    /* Réduire la taille du bouton */
+    .sidebar-toggle {
+        font-size: 24px; /* Réduire la taille du texte du bouton */
+        padding: 8px 12px; /* Réduire le rembourrage pour un bouton plus petit */
+        cursor: pointer; /* Indiquer que c'est un bouton cliquable */
+        position: absolute; /* Positionner le bouton absolument dans le header */
+        top: 0; /* Placer le bouton tout en haut */
+        left: 0; /* Placer le bouton tout à gauche */
+        z-index: 1001; /* Assurer que le bouton soit au premier plan */
+        background-color: transparent; /* Retirer le fond */
+        color: #fff; /* Couleur du texte pour un bon contraste */
+        border: none; /* Retirer toute bordure pour un look plus épuré */
+        border-radius: 5px; /* Coins légèrement arrondis */
+        width: auto; /* Laisser la largeur s'ajuster à son contenu */
+        height: auto; /* Laisser la hauteur s'ajuster à son contenu */
+        display: flex;
+        justify-content: center;
         align-items: center;
-        gap: 15px;
-        margin-top: 20px;
+    }
+
+    /* Ajustement du header pour que le bouton s'intègre bien */
+
+    .main-header .container {
+        display: block; /* Modifie l'affichage pour que les éléments soient empilés verticalement */
+        text-align: left; /* Aligne à gauche le contenu de l'en-tête */
+    }
+
+    .main-header {
+        padding: 10px 20px; /* Réduire le padding du header et ajouter de l'espace pour le bouton */
+        position: relative; /* Assurer que le header soit un conteneur pour le bouton */
+    }
+
+    .main-header .logo {
+        max-width: 80px; /* Réduire la taille du logo pour les petits écrans */
+        margin-left: 30px;
+    }
+
+    .main-header .header-image {
+    display: block; /* Assure que l'image est sur une nouvelle ligne */
+    max-width: 800px; /* Limite la largeur de l'image */
+    margin-left: 30px; /* Décale l'image de la gauche */
+    margin-top: 10px; /* Optionnel : Ajoute un peu d'espace au-dessus de l'image */
+    width: 100%; /* Ajoute la largeur complète pour s'ajuster à l'écran */
+}
+
+
+    /* Masquer le menu de navigation par défaut sur mobile */
+    .main-header nav ul {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 20px; /* Réduire l'espace de la section hero */
     }
 
     .hero h1 {
-        font-size: 28px;
+        font-size: 28px; /* Réduire la taille du titre sur mobile */
     }
 
-    .hero p {
-        font-size: 16px;
-    }
-
-    .services .service-cards {
+    .service-cards {
         flex-direction: column;
         align-items: center;
     }
 
     .service-card {
-        width: 90%;
-        max-width: 350px;
-        margin-bottom: 20px;
-        padding: 20px;
-    }
-
-    .testimonials .testimonial {
         width: 80%;
+        margin-bottom: 20px;
     }
 
-    .testimonials h2 {
-        font-size: 24px;
-    }
 
-    .main-footer p {
-        font-size: 14px;
-    }
 }
-
