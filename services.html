@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - BP ALM CONSULTING</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Menu latéral -->
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <!-- Retirer ou masquer le logo ici -->
+            <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Bouton pour ouvrir le menu latéral -->
+    <div class="sidebar-toggle" onclick="toggleSidebar()">&#9776;</div>
+    
+    <header class="main-header">
+        <div class="container">
+            <img src="assets/logo.png" alt="Logo ALM Team Consulting" class="logo">
+            <img src="assets/citation.png" alt="Image du bandeau" class="header-image">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="featured-service">
+            <div class="container">
+                <div class="service-content">
+                    <img src="assets/ser.jpg" alt="Image du service en vedette" class="service-image">
+                    <div class="service-details">
+                        <h2>Notre Expertise en ALM</h2>
+                        <p>Nous mettons à votre disposition des solutions innovantes et des outils performants pour répondre à vos besoins en gestion des risques financiers et des actifs/passifs.</p>
+                        <div class="bullet-points">
+                            <div class="bullet-point">
+                                <h3>Analyse des Risques</h3>
+                                <p>Identification et gestion des risques stratégiques pour votre entreprise.</p>
+                            </div>
+                            <div class="bullet-point">
+                                <h3>Conformité Réglementaire</h3>
+                                <p>Assistance pour respecter les exigences des régulateurs.</p>
+                            </div>
+                            <div class="bullet-point">
+                                <h3>Stratégies Financières</h3>
+                                <p>Optimisation des décisions financières pour atteindre vos objectifs.</p>
+                            </div>
+                            <div class="bullet-point">
+                                <h3>Formation Personnalisée</h3>
+                                <p>Accompagnement et formation pour vos équipes spécialisées.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Nos Services</h2>
+                <p>Chez BP ALM Consulting, nous offrons des solutions sur mesure pour répondre aux défis de la gestion des risques et des finances. Découvrez nos services ci-dessous :</p>
+                <br>
+                <br>
+                <div class="service-cards">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <img src="assets/audit.webp" alt="Audit des systèmes financiers">
+                        <h3><a href="audit-systemes-financiers.html">Audit des systèmes financiers</a></h3>
+                        <p>Évaluation approfondie des systèmes financiers pour optimiser vos processus et renforcer la conformité.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <img src="assets/alm.jpg" alt="Implémentation d'outils ALM">
+                        <h3><a href="implementation-outils-alm.html">Implémentation d'outils ALM</a></h3>
+                        <p>Nous vous aidons à implémenter des outils ALM pour mieux gérer vos risques financiers et améliorer vos stratégies.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <img src="assets/formation.png" alt="Formation et accompagnement">
+                        <h3><a href="formation-accompagnement.html">Formation et accompagnement</a></h3>
+                        <p>Des formations sur mesure pour vos équipes et un accompagnement de proximité dans l'adoption des meilleures pratiques.</p>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <img src="assets/regle.jpg" alt="Conseil en conformité réglementaire">
+                        <h3><a href="conseil-conformite-reglementaire.html">Conseil en conformité réglementaire</a></h3>
+                        <p>Accompagnement pour assurer la conformité aux normes et régulations dans le secteur financier.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BP ALM Consulting. Tous droits réservés.</p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">Contactez-nous : <a href="mailto:bpalmconsulting@gmail.com" style="text-decoration: none; color: inherit;">bpalmconsulting@gmail.com</a></p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">
+            <a href="mentions-legales.html" class="legal-link">Mentions légales</a>
+        </p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">
+            <a href="politique-de-confidentialite.html" class="legal-link">Politique de Confidentialité</a>
+        </p>
+    </footer>
+    
+    
+    <style>
+        .legal-link {
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+    
+        .legal-link:hover {
+            color: blue;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #273482;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center; /* Aligne verticalement tous les éléments */
+        }
+
+        footer p {
+            margin: 0;
+            display: inline-block;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #00b4d8;
+            transform: scale(1.05);
+        }
+
+        footer span {
+            font-size: 1.5em;
+            margin: 0 10px;
+            display: inline-flex; /* Utilisation de flex pour un alignement précis */
+            align-items: center;  /* Centrer verticalement */
+        } 
+    </style>
+    
+    
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('sidebar').style.top = "80px";
+            document.getElementById('sidebar').style.height = "calc(100% - 80px)";
+        }
+    </script>
+
+</body>
+</html>
