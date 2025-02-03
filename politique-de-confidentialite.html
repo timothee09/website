@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - BP ALM Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesmention.css">
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Menu latéral -->
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <!-- Retirer ou masquer le logo ici -->
+            <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Bouton pour ouvrir le menu latéral -->
+    <div class="sidebar-toggle" onclick="toggleSidebar()">&#9776;</div>
+    
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Logo ALM Team Consulting" class="logo">
+            </a>
+            <img src="assets/citation.png" alt="Image du bandeau" class="header-image">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu de la page -->
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>La présente politique de confidentialité a pour objectif de vous informer sur la manière dont BP ALM Consulting collecte, utilise et protège vos informations personnelles.</p>
+        </section>
+
+        <section>
+            <h2>1. Collecte des informations</h2>
+            <p>Nous collectons des informations personnelles lorsque vous interagissez avec notre site, notamment lorsque vous nous contactez via le formulaire de contact.</p>
+        </section>
+
+        <section>
+            <h2>2. Utilisation des informations</h2>
+            <p>Les informations collectées sont utilisées pour répondre à vos demandes, améliorer nos services, et vous fournir des informations pertinentes.</p>
+        </section>
+
+        <section>
+            <h2>3. Protection des données</h2>
+            <p>Nous mettons en place des mesures de sécurité pour protéger vos informations personnelles contre tout accès non autorisé.</p>
+        </section>
+
+        <section>
+            <h2>4. Vos droits</h2>
+            <p>Vous avez le droit d'accéder, de rectifier ou de supprimer vos informations personnelles. Pour toute demande, veuillez nous contacter.</p>
+        </section>
+
+        <section>
+            <h2>5. Modifications de la politique</h2>
+            <p>Nous pouvons modifier cette politique de confidentialité à tout moment. Veuillez consulter régulièrement cette page pour prendre connaissance des changements.</p>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Pour toute question concernant notre politique de confidentialité, vous pouvez nous contacter à l'adresse suivante : <a href="mailto:bpalmconsulting@gmail.com">bpalmconsulting@gmail.com</a></p>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 BP ALM Consulting. Tous droits réservés.</p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">Contactez-nous : <a href="mailto:bpalmconsulting@gmail.com" style="text-decoration: none; color: inherit;">bpalmconsulting@gmail.com</a></p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">
+            <a href="mentions-legales.html" title="Lire les mentions légales" class="legal-link">Mentions légales</a>
+        </p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">
+            <a href="politique-de-confidentialite.html" title="Lire notre politique de confidentialité" class="legal-link">Politique de Confidentialité</a>
+        </p>
+    </footer>
+    
+    
+    <style>
+        .legal-link {
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+    
+        .legal-link:hover {
+            color: blue;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #273482;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center; /* Aligne verticalement tous les éléments */
+        }
+
+        footer p {
+            margin: 0;
+            display: inline-block;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #00b4d8;
+            transform: scale(1.05);
+        }
+
+        footer span {
+            font-size: 1.5em;
+            margin: 0 10px;
+            display: inline-flex; /* Utilisation de flex pour un alignement précis */
+            align-items: center;  /* Centrer verticalement */
+        } 
+    </style>
+    
+    
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('sidebar').style.top = "80px";
+            document.getElementById('sidebar').style.height = "calc(100% - 80px)";
+        }
+    </script>
+
+</body>
+</html>

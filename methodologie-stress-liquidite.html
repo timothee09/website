@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Méthodologie de stress de liquidité - BP ALM Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Menu latéral -->
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <!-- Retirer ou masquer le logo ici -->
+            <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Bouton pour ouvrir le menu latéral -->
+    <div class="sidebar-toggle" onclick="toggleSidebar()">&#9776;</div>
+    
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Logo ALM Team Consulting" class="logo">
+            </a>
+            <img src="assets/citation.png" alt="Image du bandeau" class="header-image">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Méthodologie de stress de liquidité</h1>
+            <p>Évaluation de la capacité de résistance de l'établissement à la dégradation de l'environnement financier.</p>
+            <a href="contact.html" class="cta-button">Contactez-nous</a>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section class="services">
+        <div class="container">
+            <h2>Nos Solutions de Méthodologie de stress de liquidité</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <img src="assets/icon-finance.png" alt="Évaluation des risques financiers">
+                    <h3>Audit et Amélioration des Contrôles</h3>
+                    <br>
+                    <p>Auditer les dispositifs mis en place (opérationnel et contrôle interne N1/N2) et apporter des mesures correctives/préventives/optimisées</p>
+                </div>
+                <div class="service-item">
+                    <img src="assets/icon-strategy.png" alt="Stratégie de gestion des risques">
+                    <h3>Stratégie de gestion des risques</h3>
+                    <br>
+                    <p>Répondre aux demandes d’audits internes et des régulateurs </p>
+                </div>
+                <div class="service-item">
+                    <img src="assets/icon-compliance.png" alt="Conformité réglementaire">
+                    <h3>Conformité réglementaire</h3>
+                    <br>
+                    <p>Contribuer à la mesure des stress réglementaires et internes</p>
+                </div>
+                <div class="service-item">
+                    <img src="assets/pilotage.png" alt="Conformité réglementaire">
+                    <h3>Stress réglementaire</h3>
+                    <br>
+                    <p>Collaborer aux exercices de stress réglementaires (type production STEBA)</p>
+                </div>
+                <div class="service-item">
+                    <img src="assets/roux.png" alt="Conformité réglementaire">
+                    <h3>Rapports réglementaire</h3>
+                    <br>
+                    <p>Participer à l’élaboration des rapports réglementaires (dont ICAAP/ILAAP)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Avantages -->
+    <section class="advantages">
+        <div class="container">
+            <h2>Les Avantages de Nos Solutions</h2>
+            <div class="advantage-list">
+                <div class="advantage-item">
+                    <h3>Réduction des risques financiers</h3>
+                    <p>Minimisez les pertes et optimisez les décisions stratégiques.</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>Amélioration de la prise de décision</h3>
+                    <p>Faites des choix éclairés grâce à des analyses précises et pertinentes.</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>Conformité aux exigences légales</h3>
+                    <p>Assurez-vous que votre entreprise reste conforme aux normes de l'industrie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 BP ALM Consulting. Tous droits réservés.</p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">Contactez-nous : <a href="mailto:bpalmconsulting@gmail.com" style="text-decoration: none; color: inherit;">bpalmconsulting@gmail.com</a></p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">
+            <a href="mentions-legales.html" class="legal-link">Mentions légales</a>
+        </p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">
+            <a href="politique-de-confidentialite.html" class="legal-link">Politique de Confidentialité</a>
+        </p>
+    </footer>
+    
+    
+    <style>
+        .legal-link {
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+    
+        .legal-link:hover {
+            color: blue;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #273482;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center; /* Aligne verticalement tous les éléments */
+        }
+
+        footer p {
+            margin: 0;
+            display: inline-block;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #00b4d8;
+            transform: scale(1.05);
+        }
+
+        footer span {
+            font-size: 1.5em;
+            margin: 0 10px;
+            display: inline-flex; /* Utilisation de flex pour un alignement précis */
+            align-items: center;  /* Centrer verticalement */
+        } 
+    </style>
+    
+    
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('sidebar').style.top = "80px";
+            document.getElementById('sidebar').style.height = "calc(100% - 80px)";
+        }
+    </script>
+</body>
+</html>
