@@ -512,7 +512,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 20px;
+    padding: 40px 20px;
     background-color: #f7f7f7;
 }
 
@@ -522,6 +522,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
+    margin-bottom: 30px;
 }
 
 .experience-item:hover {
@@ -538,6 +539,12 @@ body {
 .experience-item ul {
     list-style-type: disc;
     margin-left: 25px; /* Ajusté pour plus de clarté */
+    padding-left: 20px;
+    text-align: left;
+}
+
+.experience-item li {
+    margin-bottom: 10px;
 }
 
 .experience-item ul li {
