@@ -29,6 +29,29 @@ body {
     flex-wrap: wrap;
 }
 
+.featured-service .service-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centre l'image */
+}
+
+.featured-service .service-content {
+    display: flex;
+    flex-direction: column; /* Empile le texte et l'image sur petits écrans */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.bullet-points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .service-content {
     display: flex;
     gap: 20px;
@@ -653,17 +676,19 @@ body {
     footer {
         background-color: #273482;
         color: #fff;
-        padding: 20px 0;
+        padding: 10px;
         text-align: center;
+        gap: 10px;
         font-size: 1.1em;
         display: flex;
+        font-size: 0.9em;
         flex-direction: column; /* Empile les éléments du footer sur mobile */
         align-items: center; /* Centre les éléments horizontalement */
     }
     
     footer p {
+        text-align: center;
         margin: 5px 0;
-        font-size: 1em;
     }
     
     footer a {
@@ -678,8 +703,15 @@ body {
     }
     
     footer span {
-        font-size: 1.2em;
-        margin: 10px 0;
+        display: none;
     }
     
+    .featured-service .service-content {
+        flex-direction: column; /* Met l'image au-dessus du texte */
+    }
+
+    .featured-service .service-image {
+        width: 90%; /* Assurez-vous qu'elle ne dépasse pas */
+        height: auto;
+    }
 }
