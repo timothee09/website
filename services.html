@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - BP ALM CONSULTING</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Menu latéral -->
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <!-- Retirer ou masquer le logo ici -->
+            <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Bouton pour ouvrir le menu latéral -->
+    <div class="sidebar-toggle" onclick="toggleSidebar()">&#9776;</div>
+    
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Logo ALM Team Consulting" class="logo">
+            </a>
+            <img src="assets/citation.png" alt="Image du bandeau" class="header-image">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+
+        <section class="introduction">
+            <div class="container">
+                <h1>Nos Services</h1> <!-- Titre principal -->
+                <h2>Bienvenue sur notre page des Services</h2> <!-- Sous-titre -->
+                <br><br>
+                <p>Chez BP ALM Consulting, nous mettons à votre disposition une gamme de services spécialisés pour répondre aux défis financiers complexes des entreprises. Que ce soit pour le pilotage des risques financiers, l'optimisation de la gestion des liquidités ou la conformité réglementaire, notre équipe d'experts vous accompagne tout au long de vos projets. Découvrez ci-dessous nos principaux services adaptés à vos besoins.</p>
+            </div>
+        </section>
+        
+        
+        <section class="services">
+            <div class="container">
+                <h2>Nos Services</h2>
+                <div class="service-cards">
+                    <div class="service-card">
+                        <img src="assets/service1.jpg" alt="Consulting">
+                        <h3><a href="gestion-actif-passif.html">Gestion Actif/Passif</a></h3>
+                        <br><br><br>
+                        <p>Dispositif ALM (production, pilotage, contrôles).</p><br>
+                    </div>
+
+                    
+                    <div class="service-card">
+                        <img src="assets/service2.jpg" alt="Formation">
+                        <h3><a href="pilotage-solvabilite-taux.html">Pilotage de la solvabilité de taux</a></h3>
+                        <br>
+                        <p>Dispositif Solvabilité (production indicateurs, pilotage, contrôles)</p>
+                    </div>
+    
+                    <div class="service-card">
+                        <img src="assets/service3.jpg" alt="Support">
+                        <h3><a href="methodologie-stress-liquidite.html">Méthodologie de stress de liquidité</a></h3>
+                        <br>
+                        <p>Évalue la capacité des banques à résister face à la dégradation de l'environnement financier.</p>
+                    </div>
+    
+                    <div class="service-card">
+                        <img src="assets/service4.jpg.png" alt="Support">
+                        <h3><a href="transposition-norme.html">Transpositions des normes réglementaires</a></h3>
+                        <p>Adapter son environnement bancaire pour se conformer aux normes.</p>
+                    </div>
+    
+                    <div class="service-card">
+                        <img src="assets/service5.jpg" alt="Support">
+                        <h3><a href="financement-long-terme.html">Accompagnement à la mise en place de financements long terme</a></h3>
+                        <p>Assistance pour trouver des fonds pour financer des investissements, des projets, ou un besoin de liquidité sur le long terme.</p>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BP ALM Consulting. Tous droits réservés.</p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">Contactez-nous : <a href="mailto:bpalmconsulting@gmail.com" style="text-decoration: none; color: inherit;">bpalmconsulting@gmail.com</a></p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">
+            <a href="mentions-legales.html" class="legal-link">Mentions légales</a>
+        </p>
+        <span style="font-size: 20px;">-</span>
+        <p style="display: inline-block; margin-left: 10px;">
+            <a href="politique-de-confidentialite.html" class="legal-link">Politique de Confidentialité</a>
+        </p>
+    </footer>
+    
+    
+    <style>
+        .legal-link {
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+    
+        .legal-link:hover {
+            color: blue;
+            transform: scale(1.1);
+        }
+
+        footer {
+    background-color: #273482;
+    color: #fff;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Réduit l'espace entre les éléments */
+}
+
+footer p,
+footer a {
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    white-space: nowrap; /* Évite le retour à la ligne inutile */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #00b4d8;
+}
+
+footer span {
+    display: none; /* Supprime les séparateurs "-" sur mobile */
+}
+
+/* 📱 **Adaptation Mobile** */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px; /* Encore moins d'espace sur mobile */
+    }
+
+    footer p,
+    footer a {
+        font-size: 0.85em; /* Réduction de la taille du texte */
+        padding: 3px 0;
+    }
+    .introduction {
+    padding-top: 120px; /* Augmente l'espace pour compenser le header */
+}
+
+
+} 
+    </style>
+    
+    
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('sidebar').style.top = "80px";
+            document.getElementById('sidebar').style.height = "calc(100% - 80px)";
+        }
+    </script>
+
+</body>
+</html>
