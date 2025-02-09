@@ -725,5 +725,26 @@ body {
     .hero-image img {
         width: 200px;
     }
+    .featured-service .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-service .bullet-point {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .featured-service h2 {
+        font-size: 1.5rem;
+    }
+
+    .featured-service h3 {
+        font-size: 1.1rem;
+    }
+
+    .featured-service .bullet-point p {
+        font-size: 0.9rem;
+    }
 }
 
