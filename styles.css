@@ -205,8 +205,7 @@ body {
 }
 
 .main-header .logo {
-    width: 170px;
-    height: 100px;
+    max-width: 150px;
     margin-left: 60px;
     flex-shrink: 0;
 }
