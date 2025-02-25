@@ -27,7 +27,8 @@ body {
     align-items: center; /* Centrer verticalement les éléments */
     gap: 30px;
     flex-wrap: wrap;
-    width: 500px
+    width: 500px;
+    
 }
 
 .service-image {
@@ -43,13 +44,18 @@ body {
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
+    
 }
 
 .bullet-points {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: end;
     width: 100%;
+}
+
+.bullet-points > * {
+    align-self: stretch; /* Étire chaque élément à la largeur du plus grand */
 }
 
 .service-content {
@@ -57,6 +63,7 @@ body {
     gap: 20px;
     align-items: center; /* Centrer verticalement l'image et le texte */
     flex-wrap: wrap;
+    
 }
 
 .service-image {
